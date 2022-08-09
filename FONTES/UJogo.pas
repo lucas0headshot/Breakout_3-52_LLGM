@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  ExtCtrls, Classes, Controls;
 
 type
   TJogo = class(TForm)
@@ -14,6 +15,7 @@ type
     Retangulo_2: TImage;
     procedure TimerTimer(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure Retangulo_1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,5 +52,11 @@ procedure TJogo.TimerTimer(Sender: TObject); //Usar o timer para contabilizar o 
       Retangulo_1.Visible:=false;
 
   End;
+
+procedure TJogo.Retangulo_1Click(Sender: TObject);
+begin
+if (Bola.top = 80) then
+      showMessage('Colidiu com o retangulo_1');
+end;
 
 end.
