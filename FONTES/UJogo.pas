@@ -53,10 +53,10 @@ procedure TJogo.TimerTimer(Sender: TObject); //Usar o timer para contabilizar o 
 
   End;
 
-procedure TJogo.Retangulo_1Click(Sender: TObject);
-begin
-if (Bola.top = 80) then
-      showMessage('Colidiu com o retangulo_1');
-end;
+//procedure TJogo.Retangulo_1Click(Sender: TObject);
+//begin
+//if (Bola.top = 80) then
+      //showMessage('Colidiu com o retangulo_1');
+//end;
 
 end.
