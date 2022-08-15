@@ -1,6 +1,6 @@
 object Jogo: TJogo
-  Left = 276
-  Top = 153
+  Left = 234
+  Top = 12
   BorderStyle = bsNone
   Caption = 'Jogo'
   ClientHeight = 685
